@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="js\Nueva carpeta\css.css">
+</head>
+<body >
+    <form action="" method="POST" id="form" ></form>
+    <div class="form" >
+        
+        <h1>Registro de estudiantes</h1>
+        <div class="grupo">
+            <input type="text" oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/,'')"name="" id="nombre" required ><span class="barra" ></span>
+            <label for="">Nombre</label>
+        </div>
+        <div class="grupo">
+                <input type="text" oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/,'')" name="" id="apellidos" required="" ><span class="barra"></span>
+                <label for="">Apellidos</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="" id="matricula"  required=""><span class="barra"></span>
+                <label for="">matricula</label>
+                </div>
+                    <div class="grupo">
+                        <input type="number" name="" id="telefono"   required="" ><span class="barra"></span>
+                        <label for="">Telefono</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="email" name="" id="correo" required=""  ><span class="barra"></span>
+                        <label for="">     Correo Electronico</label>
+                        </div>
+                    <button type="submit" >Registrarse</button>
+                    <p class="peligro" id="peligro"></p>
+     </div>
+    <script src="formularioValidacionJS.js"></script>
+</body>
+</html>
